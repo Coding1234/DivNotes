@@ -1,12 +1,13 @@
 <!DOCTYPE HTML>
 <html>
-<Head>
-  <Title>
+<head>
+  <title>
    My Notes
-  </Title>
+  </title>
+  <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="ProjectMynotesCSS.css">
-</Head>
-<Body class= "bodybox">
+</head>
+<body class= "bodybox">
   <h1> My Notes</h1> 
   <div class= "lesson">
     <h2>Lesson 1</h2>
@@ -14,7 +15,7 @@
         <h4>My understanding of the Net</h4>
         The Net is a bunch of computers that communicate with each other. 
         When a person goes to a web site like <a href="www.hulu.com">Hulu.com</a>, their computer sends a 
-        HTTP Request to a server. (this link is to one of my favorite video's: <a href="http://www.hulu.com/watch/717390">"Power Outage")</a>
+        HTTP Request to a server. (this link is to one of my favourite video's: <a href="http://www.hulu.com/watch/717390">"Power Outage")</a>
         The server finds the appropriate HTML document and sends it back 
         to the user's computer where the web browser used, interprets the page and displays it on the user's screen.
       </div>
@@ -29,7 +30,7 @@
           
         <h4>Structure of HTML</h4>
           <div class= "html_lesson"> 
-            HTML has a tree-like structure. all tags (exept for void tags) can house other tags in them. whenever a programmer uses a div, span, body etc. tag, you can open them to see either text or more tags (which you can usually add even more tags to.)this causes HTML to be like a tree. somewhat like the image following: <img src="http://www.cs.odu.edu/~cs333/website-latest/Lectures/trees/page/htmlxml.jpg" alt= "http://www.cs.odu.edu/~cs333/website-latest/Lectures/trees/page/htmlxml.jpg"> 
+            HTML has a tree-like structure. all tags (except for void tags) can house other tags in them. whenever a programmer uses a div, span, body etc. tag, you can open them to see either text or more tags (which you can usually add even more tags to.)this causes HTML to be like a tree. somewhat like the image following: <img src="http://www.cs.odu.edu/~cs333/website-latest/Lectures/trees/page/htmlxml.jpg" alt= "http://www.cs.odu.edu/~cs333/website-latest/Lectures/trees/page/htmlxml.jpg"> 
         </div>
         <h4> Tags and Elements</h4> 
           <div class= "html_lesson">
@@ -37,7 +38,8 @@
             <ul>
               <li> <b>These words are formatted using the "b" tag to bold it </b> </li>
               <li><em>This sentence is italicized by the "em" tag. the "i" tag also works. </em></li> 
-              <li>Lastly, I was able to add a picture to this document by using an "img" tag <br></li>
+              <li>I was able to add a picture to this document by using an "img" tag </li>
+			  <li>Lastly, it is a good idea to add meta charset="UTF-8" in the head tag to allow our page to display special characters correctly</li>
             </ul>
             <p>
               <img src="https://www.google.com/images/srpr/logo11w.png" height= 70 alt="google" > 
@@ -50,7 +52,7 @@
         <h4>Inline vs Block Elements</h4>
           <div class= "html_lesson">
             HTML elements are either inline or block. Block elements form an "invisible box" around the content inside of them, leaving a space before and after the content. (this space can be 
-            adjusted), Inline elements dont do anything to the line.
+            adjusted), Inline elements don't do anything to the line.
           </div>
   </div>
 
@@ -59,7 +61,7 @@
     <h2>Lesson 2 </h2>
         <h4>blockifying the page</h4>
           <div class= "html_lesson">
-            in HTML, everything is a block. Programmers use Div tags to make those blocks. 
+            in HTML, everything is a block. Programmers use div tags to make those blocks. 
             classes are used to identify and label each div tag/block
           </div>
         <h4>Text editors</h4>
@@ -72,7 +74,7 @@
             The principle of DRY  (don't repeat yourself) was formulated by Andy Hunt and Dave Thomas in The Pragmatic Programmer. 
 			This principle stresses that a programmer should write code that allows them to write the logic once and use or invoke it as many times as needed. 
 			For example in my CSS file I have styled the lesson class in a particular way. 
-			This is done to ensure that all div's with the lesson class get a consistent look and feel. 
+			This is done to ensure that all divs with the lesson class get a consistent look and feel. 
 			The same effect can be accomplished by styling each individual div tag in the HTML document however this requires duplication of style information for each tag involved. More typing means more potential errors and a larger HTML file which is not good.  
 			The CSS file provides a single set of instructions for divs named 'class'. It is a good way to accomplish the styling with fewer typed characters. 
 			Changes to the styling can be made in a single location and be automatically reflected across the entire HTML document this saves time and reduces errors.   
@@ -82,26 +84,34 @@
     <h2>Lesson 3</h2>
       <h4>CSS</h4>
         <div class="html_lesson">
-            css stands for "cascading style sheets". it helps programmers aboid repitition. when using CSS the style of the outermost tag will apply to all the children tags but the
-            properties will not neccisarily.instead of using things like the b tag in 
+            CSS stands for "cascading style sheets". it helps programmers avoid repetition. when using CSS the style of the outermost tag will apply to all the children tags but the
+            properties will not necessarily.instead of using things like the b tag in 
             your HTML file, you can use tags like font weight in CSS whiuch gives you a greater power over things like "how bold you want SAMPLE to be" etc.
         </div>
       <h4> CSS vocab.</h4>
         <b> Style:</b> This word can refer to many things and so it can be confusing. It can refer to:
         <ul>
-          <li>The HTML Tag: for example<b> <A HREF="http://cdni.tutorialchip.com/wp-content/uploads/2011/01/Adding-Styles-to-an-HTMl-Tag.jpg"> <img src="http://cdni.tutorialchip.com/wp-content/uploads/2011/01/Adding-Styles-to-an-HTMl-Tag.jpg" alt="http://cdni.tutorialchip.com/wp-content/uploads/2011/01/Adding-Styles-to-an-HTMl-Tag.jpg" width= "100"></A> </b></li>
+          <li>The HTML Tag: for example<b> <a HREF="http://cdni.tutorialchip.com/wp-content/uploads/2011/01/Adding-Styles-to-an-HTMl-Tag.jpg"> <img src="http://cdni.tutorialchip.com/wp-content/uploads/2011/01/Adding-Styles-to-an-HTMl-Tag.jpg" alt="http://cdni.tutorialchip.com/wp-content/uploads/2011/01/Adding-Styles-to-an-HTMl-Tag.jpg" width= "100"></a> </b></li>
           <li>The HTML attribute. For example: <div style="color : magenta">THIS TEXT IS NOW PINK</div></li>
           <li>The general look of a web page. For example: "I like that CSS style/styling."</li>
-          <li>A verb. For example: "all i need to do in order to finish this webpage is style it (yay!)."<br> <br>
+          <li>A verb. For example: "all I need to do in order to finish this webpage is style it (yay!)."</li> 
         </ul>
-        <b>Rule:</b> a line of CSS code describing the value that a certain attribute should take.<br>
-        <b>Property: </b>The property you want to change. <br>
-        <b>Value: </b>The value that you want to assign to the attribute.<br>
-        <b>Selector: </b>The name that you use to in order to target the elements that are assigned to a class or id attribute in the HTML.<br>
-        <b>Class: </b>A class refers to a group of elements that can be styled together. (Class names should not contain periods or any other punctuation marks such as class="1.1")<br>
-        <b>ID: </b>ID's are unique identifiers that uniquely identifies an element in HTML.<br>
-        in HTML, code comments begin with <!-- and end with -->. Everything in between is ignored, whereas 
-        in CSS, code comments begin with /* and end with */.
+		<dl>
+			<dt>Rule</dt> 
+			<dd>A line of CSS code describing the value that a certain attribute should take.</dd>
+			<dt>Property </dt>
+			<dd>The property you want to change. </dd>
+			<dt>Value </dt>
+			<dd>The value that you want to assign to the attribute.</dd>
+			<dt>Selector </dt>
+			<dd>The name that you use to in order to target the elements that are assigned to a class or id attribute in the HTML.</dd>
+			<dt>Class </dt>
+			<dd>A class refers to a group of elements that can be styled together. (Class names should not contain periods or any other punctuation marks such as class="1.1")</dd>
+			<dt>ID </dt>
+			<dd>ID's are unique identifiers that uniquely identifies an element in HTML.</dd>
+		</dl>
+			In HTML, code comments are written as <a href="http://www.makersoftheweb.com/wp-content/uploads/2015/06/html-comments-makersoftheweb.gif"><img src="http://www.makersoftheweb.com/wp-content/uploads/2015/06/html-comments-makersoftheweb.gif" alt="comment" width="100"></a><!-- and end with --> . Everything in between is ignored, whereas 
+			in CSS, code comments begin with / * and end with * /.
   </div>
-</Body>
+</body>
 </html>
