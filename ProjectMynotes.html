@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<HEAD>
-  <TITLE>
+<!DOCTYPE HTML>
+<html>
+<Head>
+  <Title>
    My Notes
-  </TITLE>
+  </Title>
   <link rel="stylesheet" type="text/css" href="ProjectMynotesCSS.css">
-</HEAD>
+</Head>
 <Body class= "bodybox">
   <h1> My Notes</h1> 
   <div class= "lesson">
     <h2>Lesson 1</h2>
-      
+      <div>
         <h4>My understanding of the Net</h4>
-        <div class="lesson">
         The Net is a bunch of computers that communicate with each other. 
         When a person goes to a web site like <a href="www.hulu.com">Hulu.com</a>, their computer sends a 
         HTTP Request to a server. (this link is to one of my favorite video's: <a href="http://www.hulu.com/watch/717390">"Power Outage")</a>
@@ -19,76 +19,84 @@
         to the user's computer where the web browser used, interprets the page and displays it on the user's screen.
       </div>
 
-        <h4> About Html</h4> 
-          <div class= "lesson">
+        <h4> About HTML</h4> 
+          <div class= "html_lesson">
             <p>
              HTML is an acronym for Hypertext Markup Language. All webpages are created by HTML, yet there are other files on the web such as music, videos, text files and so on.
              HTML documents contain text content which describes "what you see" and markup which describes "how it looks".
             </p>
           </div>
+          
+        <h4>Structure of HTML</h4>
+          <div class= "html_lesson"> 
+            HTML has a tree-like structure. all tags (exept for void tags) can house other tags in them. whenever a programmer uses a div, span, body etc. tag, you can open them to see either text or more tags (which you can usually add even more tags to.)this causes HTML to be like a tree. somewhat like the image following: <img src="http://www.cs.odu.edu/~cs333/website-latest/Lectures/trees/page/htmlxml.jpg" alt= "http://www.cs.odu.edu/~cs333/website-latest/Lectures/trees/page/htmlxml.jpg"> 
+        </div>
         <h4> Tags and Elements</h4> 
-          <div>
-              <div class= "lesson"> 
-                HTML documents are made of HTML elements. When writing HTML, we tell browsers the type of each element by using HTML tags.Some Tags are shown:<br> <li> <b>These words are formatted
-                using the "b" tag to bold it </b> </li>
-                <li><em>This sentence is italicized by the "em" tag. the "i" tag also works. </li></em> <li>Lastly, I was able to add a picture to this document by using an "img" tag <br>4
-              
+          <div class= "html_lesson">
+            HTML documents are made of HTML elements. When writing HTML, we tell browsers the type of each element by using HTML tags.Some Tags are shown:<br> 
+            <ul>
+              <li> <b>These words are formatted using the "b" tag to bold it </b> </li>
+              <li><em>This sentence is italicized by the "em" tag. the "i" tag also works. </em></li> 
+              <li>Lastly, I was able to add a picture to this document by using an "img" tag <br></li>
+            </ul>
             <p>
-              <img src="https://www.google.com/images/srpr/logo11w.png" height= 70 class= "Image">
-
-            </p> </li>
-          </div>
+              <img src="https://www.google.com/images/srpr/logo11w.png" height= 70 alt="google" > 
+            </p> 
           </div>
         <h4>Why programmers call  Computers "Stupid"</h4>
-          <div>
+          <div class= "html_lesson">
           Computers are stupid because they interpret commands literally. This makes them very unforgiving since a computer will not understand even a small mistake made by the programmer.
           </div>
         <h4>Inline vs Block Elements</h4>
-          <div class= "lesson">
+          <div class= "html_lesson">
             HTML elements are either inline or block. Block elements form an "invisible box" around the content inside of them, leaving a space before and after the content. (this space can be 
             adjusted), Inline elements dont do anything to the line.
-      </div>
+          </div>
   </div>
 
-    <div class= "lesson">
+
+  <div class= "lesson">
     <h2>Lesson 2 </h2>
         <h4>blockifying the page</h4>
-          <div class= "lesson">
-            in html, everything is a block. Programmers use Div tags to make those blocks. 
+          <div class= "html_lesson">
+            in HTML, everything is a block. Programmers use Div tags to make those blocks. 
             classes are used to identify and label each div tag/block
           </div>
         <h4>Text editors</h4>
-          <div class= "lesson">
+          <div class= "html_lesson">
             text editors make programmer's life easier. 
-            they help coders write code faster and more efficiently
+            they help coders write code faster and more efficiently 
           </div>
-    </div> 
-    <div class="lesson">
+        <h4>DRY</h4>
+          <div class= "html_lesson">
+            *the principle of DRY  (dont repeat yourself) was formulated by Andy Hunt and Dave Thomas in The Pragmatic Programmer implemeting DRY is helpful to programmers is useful because duplication is wasteful. every unnesscary line if code is a possible bug. taking repeditive or similar tasks and doing them with a single function makes the code easier to maintain and change.
+            The developer who learns to recognize duplication, and understands how to eliminate it through appropriate practice and proper abstraction, can produce much cleaner code than one who continuously uses unnecessary repetition.
+          </div>  
+  </div>
+  <div class="lesson"> 
     <h2>Lesson 3</h2>
-        <h4>CSS</h4>
-          <div class= "lesson">
+      <h4>CSS</h4>
+        <div class="html_lesson">
             css stands for "cascading style sheets". it helps programmers aboid repitition. when using CSS the style of the outermost tag will apply to all the children tags but the
             properties will not neccisarily.instead of using things like the b tag in 
             your HTML file, you can use tags like font weight in CSS whiuch gives you a greater power over things like "how bold you want SAMPLE to be" etc.
-          </div>
-    </div>
-    
-<div class= "glossary">
-<h4> CSS vocab.</h4>
-  <b> Style:</b> This word can refer to many things and so it can be confusing. It can refer to:
-<li>The HTML element.: (<b>< style>div {color:blue}< /style>)</b></li>
-<li>The HTML attribute. For example: <div style="color : magenta">THIS TEXT IS NOW PINK</div></li>
-<li>The general look of a web page. For example: "I like that CSS style/styling."</li>
-<li>A verb. For example: "all i need to do in order to finish this webpage is style it (yay!)."<br> <br>
-<b>Rule:</b> a line of CSS code describing the value that a certain attribute should take.<br>
-<b>Property: </b>The property you want to change. <br>
-<b>Value: </b>The value that you want to assign to the attribute.<br>
-<b>Selector: </b>The name that you use to in order to target the elements that are assigned to a class or id attribute in the HTML.<br>
-<b>Class: </b>A class refers to a group of elements that can be styled together. (Class names should not contain periods or any other punctuation marks such as class="1.1")<br>
-<b>ID: </b>ID's are unique identifiers that uniquely identifies an element in HTML.<br>
-in HTML, code comments begin with <!-- and end with -->. Everything in between is ignored, whereas 
-in CSS, code comments begin with /* and end with */.
-</div>
-
+        </div>
+      <h4> CSS vocab.</h4>
+        <b> Style:</b> This word can refer to many things and so it can be confusing. It can refer to:
+        <ul>
+          <li>The HTML Tag: for example<b> <A HREF="http://cdni.tutorialchip.com/wp-content/uploads/2011/01/Adding-Styles-to-an-HTMl-Tag.jpg"> <img src="http://cdni.tutorialchip.com/wp-content/uploads/2011/01/Adding-Styles-to-an-HTMl-Tag.jpg" alt="http://cdni.tutorialchip.com/wp-content/uploads/2011/01/Adding-Styles-to-an-HTMl-Tag.jpg" width= "100"></A> </b></li>
+          <li>The HTML attribute. For example: <div style="color : magenta">THIS TEXT IS NOW PINK</div></li>
+          <li>The general look of a web page. For example: "I like that CSS style/styling."</li>
+          <li>A verb. For example: "all i need to do in order to finish this webpage is style it (yay!)."<br> <br>
+        </ul>
+        <b>Rule:</b> a line of CSS code describing the value that a certain attribute should take.<br>
+        <b>Property: </b>The property you want to change. <br>
+        <b>Value: </b>The value that you want to assign to the attribute.<br>
+        <b>Selector: </b>The name that you use to in order to target the elements that are assigned to a class or id attribute in the HTML.<br>
+        <b>Class: </b>A class refers to a group of elements that can be styled together. (Class names should not contain periods or any other punctuation marks such as class="1.1")<br>
+        <b>ID: </b>ID's are unique identifiers that uniquely identifies an element in HTML.<br>
+        in HTML, code comments begin with <!-- and end with -->. Everything in between is ignored, whereas 
+        in CSS, code comments begin with /* and end with */.
+  </div>
 </Body>
 </html>
