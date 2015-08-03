@@ -3,8 +3,8 @@
 padding: 50px;
 border-radius:25px;
 max-width: 750px;
-left-margin:auto;
-right-margin:auto;}
+margin-left:auto;
+margin-right:auto;}
 
 .lesson
 {background-color:rgba(253, 0, 135, 0.21);
