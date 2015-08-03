@@ -69,8 +69,13 @@
           </div>
         <h4>DRY</h4>
           <div class= "html_lesson">
-            *the principle of DRY  (dont repeat yourself) was formulated by Andy Hunt and Dave Thomas in The Pragmatic Programmer implemeting DRY is helpful to programmers is useful because duplication is wasteful. every unnesscary line if code is a possible bug. taking repeditive or similar tasks and doing them with a single function makes the code easier to maintain and change.
-            The developer who learns to recognize duplication, and understands how to eliminate it through appropriate practice and proper abstraction, can produce much cleaner code than one who continuously uses unnecessary repetition.
+            The principle of DRY  (don't repeat yourself) was formulated by Andy Hunt and Dave Thomas in The Pragmatic Programmer. 
+			This principle stresses that a programmer should write code that allows them to write the logic once and use or invoke it as many times as needed. 
+			For example in my CSS file I have styled the lesson class in a particular way. 
+			This is done to ensure that all div's with the lesson class get a consistent look and feel. 
+			The same effect can be accomplished by styling each individual div tag in the HTML document however this requires duplication of style information for each tag involved. More typing means more potential errors and a larger HTML file which is not good.  
+			The CSS file provides a single set of instructions for divs named 'class'. It is a good way to accomplish the styling with fewer typed characters. 
+			Changes to the styling can be made in a single location and be automatically reflected across the entire HTML document this saves time and reduces errors.   
           </div>  
   </div>
   <div class="lesson"> 
