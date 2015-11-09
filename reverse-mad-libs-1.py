@@ -1,12 +1,12 @@
 # function to display high level and loop till level is finished
 def displayHigh():
-	#display high mat lab paragraph
-	highLab = '''The list data type in python has several methods. 
+	# display high mat lab paragraph
+	highLab = '''The list data type in python has several methods.
 	The ---1--- method adds a single item to the end of the list,
-	The ---2--- method removes an element from the list, 
-	The ---3--- method inserts an item at a given index in the list. 
+	The ---2--- method removes an element from the list,
+	The ---3--- method inserts an item at a given index in the list.
 	The ---4--- method reverses the elements in a list (in place).'''
-	#store the answers of the highLab. This is used to compare user input with the correct answer
+	#store the answers of the highLab. This is used to compare user raw_input with the correct answer
 	highLabAnswers = {
 			'1':'append',
 			'2':'remove',
@@ -27,9 +27,9 @@ def displayHigh():
 	while option1<> "true" or option2<> "true" or option3 <> "true" or option4 <> "true":
 		#loop till option1 is correctly entered
 		while option1 == "false":
-			#get user input for blank 1
-			getOption1 = input("Provide word to replace ---1--- \n")
-			# Get user input for blank 1
+			#get user raw_input for blank 1
+			getOption1 = raw_input("Provide word to replace ---1--- \n")
+			# Get user raw_input for blank 1
 			if getOption1 == highLabAnswers['1']:
 				print "Great! you got that right"
 				print getOption1
@@ -39,12 +39,12 @@ def displayHigh():
 				# set option1 to true so that the program moves to option2
 				option1 = "true"
 			else:
-				# if the user input is not correct this will allow the user to try again
+				# if the user raw_input is not correct this will allow the user to try again
 				print "Try again"
 
 		# loop till option 2 is correctly entered
 		while option2 == "false":
-			getOption2 = input("Provide word to replace ---2--- \n")
+			getOption2 = raw_input("Provide word to replace ---2--- \n")
 			if getOption2 == highLabAnswers['2']:
 				print "Great! you got that right"
 				print getOption2
@@ -56,7 +56,7 @@ def displayHigh():
 		
 		# loop till option 3 is correctly entered
 		while option3 == "false":
-			getOption3 = input("Provide word to replace ---3--- \n")
+			getOption3 = raw_input("Provide word to replace ---3--- \n")
 			if getOption3 == highLabAnswers['3']:
 				print "Great! you got that right"
 				print getOption3
@@ -68,7 +68,7 @@ def displayHigh():
 		
 		# loop till option 4 is correctly entered
 		while option4 == "false":
-			getOption4 = input("Provide word to replace ---4--- \n")
+			getOption4 = raw_input("Provide word to replace ---4--- \n")
 			if getOption4 == highLabAnswers['4']:
 				print "Great! you got that right"
 				print getOption4
@@ -80,11 +80,11 @@ def displayHigh():
 	
 	print "yes!!!!Congrats you did it!!!"
 	# upon level completion provide option to restart game or quit
-	goOn = input("type 'again' to start over OR 'quit' to exit the game \n")
+	goOn = raw_input("type 'again' to start over OR 'quit' to exit the game \n")
 	if goOn == "quit":
 		quit()
 	elif goOn == "again":
-		#if user wants to play again call getLevel to gain user input
+		#if user wants to play again call getLevel to gain user raw_input
 		getLevel()
 
 # medium level
@@ -95,7 +95,7 @@ def displayMedium():
 	All instructions inside of the ---2--- are executed from ---3--- to bottom.
 	The program leaves the function and goes back to where it started from.
 	Any data computed and ---4--- by the function is used in place of the function in the original line of code.'''
-	#store the answers of the highLab. This is used to compare user input with the correct answer
+	#store the answers of the highLab. This is used to compare user raw_input with the correct answer
 	medLabAnswers = {
 			'1':'program',
 			'2':'function',
@@ -116,9 +116,9 @@ def displayMedium():
 	while option1<> "true" or option2<> "true" or option3 <> "true" or option4 <> "true":
 		#loop till option1 is correctly entered
 		while option1 == "false":
-			#get user input for blank 1
-			getOption1 = input("Provide word to replace ---1--- \n")
-			# Get user input for blank 1
+			#get user raw_input for blank 1
+			getOption1 = raw_input("Provide word to replace ---1--- \n")
+			# Get user raw_input for blank 1
 			if getOption1 == medLabAnswers['1']:
 				print "Great! you got that right"
 				print getOption1
@@ -128,12 +128,12 @@ def displayMedium():
 				# set option1 to true so that the program moves to option2
 				option1 = "true"
 			else:
-				# if the user input is not correct this will allow the user to try again
+				# if the user raw_input is not correct this will allow the user to try again
 				print "Try again"
 
 		# loop till option 2 is correctly entered
 		while option2 == "false":
-			getOption2 = input("Provide word to replace ---2--- \n")
+			getOption2 = raw_input("Provide word to replace ---2--- \n")
 			if getOption2 == medLabAnswers['2']:
 				print "Great! you got that right"
 				print getOption2
@@ -145,7 +145,7 @@ def displayMedium():
 		
 		# loop till option 3 is correctly entered
 		while option3 == "false":
-			getOption3 = input("Provide word to replace ---3--- \n")
+			getOption3 = raw_input("Provide word to replace ---3--- \n")
 			if getOption3 == medLabAnswers['3']:
 				print "Great! you got that right"
 				print getOption3
@@ -157,7 +157,7 @@ def displayMedium():
 		
 		# loop till option 4 is correctly entered
 		while option4 == "false":
-			getOption4 = input("Provide word to replace ---4--- \n")
+			getOption4 = raw_input("Provide word to replace ---4--- \n")
 			if getOption4 == medLabAnswers['4']:
 				print "Great! you got that right"
 				print getOption4
@@ -169,11 +169,11 @@ def displayMedium():
 	
 	print "yes!!!!Congrats you did it!!!"
 	# upon level completion provide option to restart game or quit
-	goOn = input("type 'again' to start over OR 'quit' to exit the game \n")
+	goOn = raw_input("type 'again' to start over OR 'quit' to exit the game \n")
 	if goOn == "quit":
 		quit()
 	elif goOn == "again":
-		#if user wants to play again call getLevel to gain user input
+		#if user wants to play again call getLevel to gain user raw_input
 		getLevel()
 
 # get low level
@@ -183,7 +183,7 @@ def displayLow():
 	lowLab = '''There are two types of loops in ---1---. The ---2--- and the ---3--- loop. 
 	The ---2--- loop is useful to iterate over the contents of a list
 	The ---3--- loop is useful to repeat a sequence of steps till a given condition is true or ---4---'''
-	#store the answers of the highLab. This is used to compare user input with the correct answer
+	#store the answers of the highLab. This is used to compare user raw_input with the correct answer
 	lowLabAnswers = {
 			'1':'python',
 			'2':'for',
@@ -204,9 +204,9 @@ def displayLow():
 	while option1<> "true" or option2<> "true" or option3 <> "true" or option4 <> "true":
 		#loop till option1 is correctly entered
 		while option1 == "false":
-			#get user input for blank 1
-			getOption1 = input("Provide word to replace ---1--- \n")
-			# Get user input for blank 1
+			#get user raw_input for blank 1
+			getOption1 = raw_input("Provide word to replace ---1--- \n")
+			# Get user raw_input for blank 1
 			if getOption1 == lowLabAnswers['1']:
 				print "Great! you got that right"
 				print getOption1
@@ -216,12 +216,12 @@ def displayLow():
 				# set option1 to true so that the program moves to option2
 				option1 = "true"
 			else:
-				# if the user input is not correct this will allow the user to try again
+				# if the user raw_input is not correct this will allow the user to try again
 				print "Try again"
 
 		# loop till option 2 is correctly entered
 		while option2 == "false":
-			getOption2 = input("Provide word to replace ---2--- \n")
+			getOption2 = raw_input("Provide word to replace ---2--- \n")
 			if getOption2 == lowLabAnswers['2']:
 				print "Great! you got that right"
 				print getOption2
@@ -233,7 +233,7 @@ def displayLow():
 		
 		# loop till option 3 is correctly entered
 		while option3 == "false":
-			getOption3 = input("Provide word to replace ---3--- \n")
+			getOption3 = raw_input("Provide word to replace ---3--- \n")
 			if getOption3 == lowLabAnswers['3']:
 				print "Great! you got that right"
 				print getOption3
@@ -245,7 +245,7 @@ def displayLow():
 		
 		# loop till option 4 is correctly entered
 		while option4 == "false":
-			getOption4 = input("Provide word to replace ---4--- \n")
+			getOption4 = raw_input("Provide word to replace ---4--- \n")
 			if getOption4 == lowLabAnswers['4']:
 				print "Great! you got that right"
 				print getOption4
@@ -257,21 +257,21 @@ def displayLow():
 	
 	print "wowza!!!!Ready to take it up a notch?"
 	# upon level completion provide option to restart game or quit
-	goOn = input("type 'again' to start over OR 'quit' to exit the game \n")
+	goOn = raw_input("type 'again' to start over OR 'quit' to exit the game \n")
 	if goOn == "quit":
 		quit()
 	elif goOn == "again":
-		#if user wants to play again call getLevel to gain user input
+		#if user wants to play again call getLevel to gain user raw_input
 		getLevel()
 
 # function to get user to choose the level they want to play
 def getLevel():
-	# get user input and store it in variable
-	level = input("Enter a diffculty level. Options are 'High', 'Medium', 'Low' \n" )
+	# get user raw_input and store it in variable
+	level = raw_input("Enter a diffculty level. Options are 'High', 'Medium', 'Low' \n" )
 	callLevel(level)
 	return level
 
-# understand user input received via getLevel()
+# understand user raw_input received via getLevel()
 def callLevel(level):
 	if level == 'High' or level == 'high' or level == 'HIGH':
 		displayHigh()
